@@ -1,10 +1,10 @@
-include "console.bridge";
-
+include "include\\console.bridge";
+ 
 function ui32 MyCallback(array<ui8>@ arg) {
     Console_Write("    MyCallback(" + arr2str(arg) + ")\n");
     return sizeof(arg);
 }
-
+ 
 struct MyData {
     i32 val1;
     i32 val2;
